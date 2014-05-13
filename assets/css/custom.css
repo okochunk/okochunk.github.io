@@ -1,0 +1,19 @@
+body {
+  background-color: #fff;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.hero-unit{
+  padding: 20px;
+  margin-bottom: 30px;
+  background-color:  #ADC7D9;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+}
+
+.carousel-inner .item img{
+    margin-right: auto;
+    margin-left: auto;
+}
