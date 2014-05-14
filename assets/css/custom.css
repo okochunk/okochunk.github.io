@@ -17,3 +17,9 @@ body {
     margin-right: auto;
     margin-left: auto;
 }
+
+.footer {
+  margin-top: 45px;
+  padding: 35px 0 36px;
+  border-top: 1px solid #e5e5e5;
+}
