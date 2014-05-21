@@ -4,8 +4,16 @@ body {
   padding-bottom: 40px;
 }
 
+.title {
+  margin-bottom: 20px;
+}
+
+.box-comment {
+  margin-bottom: 10px;
+}
+
 .container .page-info {
-  padding-top: 120px;
+  padding-top: 45px;
 }
 
 .hero-unit{
