@@ -13,7 +13,7 @@ body {
 }
 
 .container .page-info {
-  padding-top: 90px;
+  padding-top: 120px;
 }
 
 .hero-unit{
@@ -239,6 +239,15 @@ body {
 
 .comment-date {
   font-size: 8px;
+}
+
+.error-box {
+  margin-left:160px;
+  margin-top:5px;
+}
+
+.checkout-box {
+  border-right: 1px solid #C9C9C9;
 }
 
 .footer {

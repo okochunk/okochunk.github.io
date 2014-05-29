@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Detail - Static</title>
+    <title>Checkout - Static</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -47,7 +47,7 @@
                   <li>
                     <a>Product 2</a>
                   </li>
-                  <li><a class="btn btn-primary">Cart</a></li>
+                  <li><a href="cart.html" class="btn btn-primary">Cart</a></li>
                 </ul>
               </li>
             </ul>
@@ -78,137 +78,36 @@
     </div>
 
     <div class="container">
-      <h3 class="page-info">Details</h3>
+      <h1 class="page-info"></h1>
+
       <div class="row">
-        <div class="span5">
-          <img src="assets/img/thumbnails/Red_M_F.png" alt="">
-        </div>
-        <div class="span7">
-          <h3>Product Name</h3>
-          <a href="#">
-            <span class="fa-stack fa-lg">
-              <i class="fa fa-circle fa-stack-2x"></i>
-              <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-            </span>
-         </a>
-          <a href="#">
-            <span class="fa-stack fa-lg">
-              <i class="fa fa-circle fa-stack-2x"></i>
-              <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-            </span>
-          </a>
-          <a href="#">
+        <div class="span6 checkout-box">
+
+          <h3>Guest Checkout</h3>
           <span class="fa-stack fa-lg">
             <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
+            <i class="fa fa-credit-card fa-stack-1x fa-inverse"></i>
           </span>
-          </a>
-
-          <hr>
-          <dl>Product Description, Color Size Price Anything You Can Pick In This Area,
-          Product Description, Color Size Price Anything You Can Pick In This Area,
-          Product Description, Color Size Price Anything You Can Pick In This Area</dl>
-          <hr>
-
-          <h4><b>$ 10</b></h4>
           <br>
-          <form action="cart.html">
-                <div class="control-group">
-                  <label for="select01" class="control-label t-left">Size</label>
-                  <div class="controls">
-                    <select id="select01" name="size" class="span1">
-                        <option>S</option>
-                        <option>M</option>
-                        <option>L</option>
-                    </select>
-                  </div>
-                </div>
-
-                <div class="control-group">
-                  <label for="select01" class="control-label t-left">Quantity</label>
-                  <div class="controls">
-                    <input type="number" class="input-mini" name="total" value="1">
-                  </div>
-                </div>
-
-                <div class="form-actions">
-                  <button type="submit" class="btn-large btn-warning"><i class="fa fa-money"></i> Buy Now</button>
-                </div>
-          </form>
-        </div>
-      </div>
-
-      <br>
-
-      <div class="row">
-        <div class="span12">
-          <h3 class="title">Other Products</h3>
-          <ul class="thumbnails">
-            <li class="span2">
-              <a href="#" class="thumbnail">
-                <img src="assets/img/thumbnails/DarkChocolate_M_F.png" alt="">
-                <div class="caption">
-                  <h5>Thumbnail label</h5>
-                  <p>Thumbnail caption right here...</p>
-                </div>
-              </a>
-            </li>
-            <li class="span2">
-              <a href="#" class="thumbnail">
-                <img src="assets/img/thumbnails/CoolBlue_M_B.png" alt="">
-                <div class="caption">
-                  <h5>Thumbnail label</h5>
-                  <p>Thumbnail caption right here...</p>
-                </div>
-              </a>
-            </li>
-            <li class="span2">
-              <a href="#" class="thumbnail">
-                <img src="assets/img/thumbnails/Black_M_S.png" alt="">
-                <div class="caption">
-                  <h5>Thumbnail label</h5>
-                  <p>Thumbnail caption right here...</p>
-                </div>
-              </a>
-            </li>
-            <li class="span2">
-              <a href="#" class="thumbnail">
-                <img src="assets/img/thumbnails/Red_M_F.png" alt="">
-                <div class="caption">
-                  <h5>Thumbnail label</h5>
-                  <p>Thumbnail caption right here...</p>
-                </div>
-              </a>
-            </li>
-            <li class="span2">
-              <a href="#" class="thumbnail">
-                <img src="assets/img/thumbnails/Turquoise_M_F.png" alt="">
-                <div class="caption">
-                  <h5>Thumbnail label</h5>
-                  <p>Thumbnail caption right here...</p>
-                </div>
-              </a>
-            </li>
-            <li class="span2">
-              <a href="#" class="thumbnail">
-                <img src="assets/img/thumbnails/DarkChocolate_M_F.png" alt="">
-                <div class="caption">
-                  <h5>Thumbnail label</h5>
-                  <p>Thumbnail caption right here...</p>
-                </div>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="span12">
-          <h3 class="title">Comments</h3>
-
-          <form class="form-horizontal" id="form-comment">
+          <form class="form-horizontal">
               <div class="control-group">
                 <label class="control-label" for="input01">Name</label>
+                <div class="controls">
+                  <input type="text" class="input-xlarge" id="input01">
+                </div>
+                <div class="alert alert-error error-box">
+                  <button class="close" data-dismiss="alert">x</button>
+                  <strong>Warning!</strong> field name required.
+                </div>
+              </div>
+              <div class="control-group">
+                <label class="control-label" for="input01">Address</label>
+                <div class="controls">
+                  <textarea class="input-xlarge" id="input01" rows="3"></textarea>
+                </div>
+              </div>
+              <div class="control-group">
+                <label class="control-label" for="input01">Phone Number</label>
                 <div class="controls">
                   <input type="text" class="input-xlarge" id="input01">
                 </div>
@@ -219,32 +118,43 @@
                   <input type="text" class="input-xlarge" id="input01">
                 </div>
               </div>
-              <div class="control-group">
-                <label class="control-label" for="input01">Comment</label>
-                <div class="controls">
-                  <textarea class="input-xlarge" id="textarea" rows="3"></textarea>
-                </div>
-              </div>
               <div class="form-actions">
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-success"><i class="fa fa-send"></i> Send Invoice</button>
+                <button class="btn">Cancel</button>
               </div>
           </form>
 
+        </div>
 
-          <div class="span1"><img src="assets/img/thumbnails/80x80.gif"></div>
-          <div class="span10 box-comment">
-            <p> <b>Hendrix</b> <span class="comment-date">19 May 2014</span></p>
-            <p>This is realy good product, i want recommended this product to everyone in this shop market
-            This is realy good product, i want recommended this product to everyone in this shop market</p>
-          </div>
-          <div class="span1"><img src="assets/img/thumbnails/80x80.gif"></div>
-          <div class="span10 box-comment">
-            <p> <b>Hendrix</b> <span class="comment-date">19 May 2014</span></p>
-            <p>This is realy good product, i want recommended this product to everyone in this shop market
-            This is realy good product, i want recommended this product to everyone in this shop market</p>
-          </div>
+        <div class="span5">
+          <h3>Login</h3>
+          <span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-user fa-stack-1x fa-inverse"></i>
+          </span>
+          <br>
+          <form class="form-horizontal">
+              <div class="control-group">
+                <label class="control-label" for="input01">Username</label>
+                <div class="controls">
+                  <input type="text" class="input-xlarge" id="input01">
+                </div>
+              </div>
+              <div class="control-group">
+                <label class="control-label" for="input01">Password</label>
+                <div class="controls">
+                  <input type="text" class="input-xlarge" id="input01">
+                </div>
+              </div>
+              <div class="form-actions">
+                <button type="submit" class="btn btn-primary"><i class="fa fa-lock"></i> Login </button>
+              </div>
+            </form>
+          <a href="#">Register</a>
         </div>
       </div>
+
+      <br>
 
       <footer class="footer">
         <div class="row">
